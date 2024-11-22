@@ -1,9 +1,12 @@
 # Multi Store task
 
 This task is done with REACT.js using the hooks methods
+
+
 Some of the major hooks used here are:
 
 -useState hook 
+
 -useEffect hook
  
  These are used here to manage the state and side effects 
