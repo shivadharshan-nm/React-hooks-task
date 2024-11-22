@@ -1,8 +1,17 @@
-# React + Vite
+# Multi Store task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This task is done with REACT.js using the hooks methods
+Some of the major hooks used here are:
 
-Currently, two official plugins are available:
+-useState hook 
+-useEffect hook
+ 
+ These are used here to manage the state and side effects 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ #Task explanation 
+
+ This page resembles the basic e-commerce site where the products can be added to the cart and removed 
+
+ Here, when the cart button is clicked it opens as a modal 
+
+ The api used here is [text](https://fakestoreapi.com/)
