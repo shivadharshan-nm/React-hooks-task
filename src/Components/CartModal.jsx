@@ -2,14 +2,17 @@ import React from 'react';
 
 const CartModal = ({ cart, onClose, onRemove }) => {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-md">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+      <div className="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-md max-h-[80vh] overflow-y-auto">
+        {/* Close Button */}
         <button
           onClick={onClose}
           className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded mb-4"
         >
           Close
         </button>
+
+        {/* Modal Content */}
         <h2 className="text-lg font-bold mb-4">Cart</h2>
         {cart.length === 0 ? (
           <p className="text-gray-600">Your cart is empty.</p>
@@ -28,7 +31,10 @@ const CartModal = ({ cart, onClose, onRemove }) => {
                 <div className="flex-1 ml-4">
                   <h4 className="text-sm font-semibold">{item.title}</h4>
                   <p className="text-sm text-gray-600">
-                    ${item.price.toFixed(2)}
+                    ${item.price.toFixed(2)} x {item.quantity}
+                  </p>
+                  <p className="text-sm font-bold">
+                    Total: ${(item.price * item.quantity).toFixed(2)}
                   </p>
                 </div>
                 <button
