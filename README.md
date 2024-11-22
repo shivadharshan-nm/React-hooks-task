@@ -14,4 +14,4 @@ Some of the major hooks used here are:
 
  Here, when the cart button is clicked it opens as a modal 
 
- The api used here is [text](https://fakestoreapi.com/)
+ The api used here is [API](https://fakestoreapi.com/)
